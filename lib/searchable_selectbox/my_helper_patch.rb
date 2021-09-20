@@ -9,11 +9,11 @@ module SearchableSelectbox
     end
 
     module InstanceMethods
-      # Run replaceSelect2(); when remove_block.js.erb
+      # Run replaceTomSelect(); when remove_block.js.erb
       def block_select_tag(user)
         super(user) +
         javascript_tag do
-          '$(function(){replaceSelect2();});'
+          '$(function(){replaceTomSelect();});'
         end
       end
     end
